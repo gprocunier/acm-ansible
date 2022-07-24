@@ -1,0 +1,9 @@
+---
+- name: generic ansible hook for rhacm
+  gather_facts: no
+  hosts: all
+  vars:
+    payload: "this is the default payload"
+  tasks:
+    - debug:
+        msg: "{{ payload }}"
